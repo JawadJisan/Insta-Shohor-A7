@@ -97,7 +97,17 @@
             <div>
                 <h4>Local Storage vs Session Storage?</h4>
                 <p>
-                    Browser 
+                    কোন Website Browse করতে গিয়ে Browser এর মধ্যে locally কোন user এর যে Data গুলো save হয় তাই Local Storage.
+                    <br>
+                    শুধুমাত্র একটি নির্দিষ্ট সেশনের জন্য ডেটা রাখে browser এর Session Storage.
+                    <br>
+                    1. local Storage আর Session Storage এর কাজ প্রায় মোটামুটি same. local Storage সর্বোচ্চ 10mb পর্যন্ত এবং session Storage সর্বোচ্চ 5mb পর্যন্ত data store করে রাখতে পারে।
+                    2. local storage কে window এর সব tab থেকে access করা যায়। আর session storage কে শুধুমাত্র current tab থেকে access করা যায়।
+                    3. local storage এর expires নেয়। session storage এর tab বন্ধ করার সাথে সাথে expires শেষ হয়ে যায়।
+                    4. local storage এবং session storage এর data শুধু Browser এ store হয়। 
+                    5. user এর যদি কোন information Server এ store করা (যেমন: user Authentication এর তথ্য গুলো) না লাগে তাহলে সবসময় Local Storage অথবা Session Storage ব্যবহার করা উচিত। 
+                
+                    
                 </p>
             </div>
         </section> 
