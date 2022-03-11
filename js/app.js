@@ -16,7 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-  console.log('id is:',id)
+  // console.log('id is:',id)
     likedPostsId.push(id); 
     showPosts(posts);
 };
@@ -59,9 +59,9 @@ const switchTab = (id) => {
 
 const createPost = (post) => {
   // console.log('The userImage is:', post.userImage)
-  console.log('The post is:', post)
+  // console.log('The post is:', post)
     const image = post.image;
-    const userImage = post.userImage;
+    // const userImage = post.userImage;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
     div.innerHTML = `
@@ -72,7 +72,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${userImage}" alt="User Picture" />
+                    <img src="${post.userImage}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
