@@ -30,12 +30,12 @@ const reportPost = (id) => {
 
 const displayContent = (text) => {
     // console.log(text.length);
-    if(text.length < 30){
-      return text
-    }
-    else{
-    return text.length < 30  ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>"; 
-    } 
+    // if(text.length < 30){
+    //   return text
+    // }
+    // else{
+    return text.length < 30  ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>"; 
+    // } 
 };
 
 const switchTab = (id) => {
@@ -50,7 +50,6 @@ const switchTab = (id) => {
         document.getElementById( "reported" ).style.display = "none";
 
         displayLikedPosts();
-        
     } else {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
